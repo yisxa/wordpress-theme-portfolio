@@ -1,0 +1,33 @@
+/*
+Theme Name: Portfolio
+Author: Bandhu
+Author url : www.xivig.com
+License: GPL2+
+Text domain: xivig
+Version: 1.0.0
+*/
+
+
+.navbar-nav-modified  {
+	list-style-type: none;
+}
+
+
+.navbar-nav-modified a {
+	color: white;
+}
+
+/* get the page nformation from the body_class() function */
+.page-id-1961 h2 {
+	color: red;
+}
+
+.btn-primary--modified {
+	background: linear-gradient(120deg, #4E31B7, #5AF3C6);
+    color: #fff
+}
+
+.btn-outline-primary--modified {
+	/*background: linear-gradient(120deg, #4E31B7, #5AF3C6);*/
+	
+}
