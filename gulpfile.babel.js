@@ -28,6 +28,7 @@ export const reload = (done) => {
 export const watch = () => {
  // if a changed is detected then it will refresh the page
 	gulp.watch('assets/**/*.css', reload);
+	gulp.watch('*.css', reload);
 	gulp.watch('**/*.php', reload);
 	gulp.watch('assets/**/*.js', reload);
 } // now run 'gulp watch' to watch the task and ctrl+c to terminate the task

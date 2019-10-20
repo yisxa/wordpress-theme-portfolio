@@ -27,7 +27,7 @@ function xivig_customtheme_setup(){
 		'primary' => __( 'Primary Menu', 'xivig'),
     'footer' => __( 'Footer Menu', 'xivig' ),
     'social' => __( 'Social Links Menu', 'xivig' ),
-	));
+  ));
 	// Add theme support for document title tag
 	add_theme_support( 'title-tag' );
 
@@ -70,27 +70,27 @@ function xivig_customtheme_setup(){
         )
       );
 
-}
-add_action('after_setup_theme', 'xivig_customtheme_setup');
+    }
+    add_action('after_setup_theme', 'xivig_customtheme_setup');
 
 
 // Excerpt length set
-function set_excerpt_length(){
-  return 25;
-}
-add_filter('excerpt_length', 'set_excerpt_length');
+    function set_excerpt_length(){
+      return 25;
+    }
+    add_filter('excerpt_length', 'set_excerpt_length');
 
 //Display a Read More link in WordPress Excerpts
 // Changing excerpt more
-   function xivig_new_excerpt_more($more) {
-   global $post;
-   return '… <a href="'. get_permalink($post->ID) . '">' . '<button class="btn btn-primary btn-primary--modified  py2 px2">Read More</button>' . '</a>';
+    function xivig_new_excerpt_more($more) {
+     global $post;
+     return '… <a href="'. get_permalink($post->ID) . '">' . '<button class="btn btn-primary btn-primary--modified  py2 px2">Read More</button>' . '</a>';
    }
    add_filter('excerpt_more', 'xivig_new_excerpt_more');
 
 
 // register sidebar to show in the widgets area
-function xivig_customtheme_widgets(){
+   function xivig_customtheme_widgets(){
   /**
    * Creates a sidebar
    * @param string|array  Builds Sidebar based off of 'name' and 'id' values.
@@ -129,6 +129,40 @@ function xivig_customtheme_widgets(){
       'after_widgets' => '</h1>',
     )
   );
+
+  // footer navigation four column
+  register_sidebar(
+    array(
+      'name' => 'Footer 1',
+      'id' => 'footer_1',
+      'description' => __( 'Xivig Widget Area', 'footer 1'),
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => 'Footer 2',
+      'id' => 'footer_2',
+      'description' => __( 'Xivig Widget Area', 'footer 2'),
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => 'Footer 3',
+      'id' => 'footer_3',
+      'description' => __( 'Xivig Widget Area', 'footer 3'),
+    )
+  );
+
+  register_sidebar(
+    array(
+      'name' => 'Footer 4',
+      'id' => 'footer_4',
+      'description' => __( 'Xivig Widget Area', 'footer 4'),
+    )
+  );
+
 
 }
 

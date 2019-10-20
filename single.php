@@ -11,7 +11,7 @@
 						<?php get_template_part('template-parts/content', 'single'); ?>
 						<br>
 						<!-- Add comments to the single post -->
-						<?php 
+						<?php
 							if ( comments_open() || get_comments_number() ){
 								comments_template();
 							}
@@ -29,10 +29,9 @@
 					<?php get_sidebar(); ?>
 				</div>
 			</div>
-			
+
 		</div>
 	</div>
-
 	<!-- for getting the footer.php link to the index.php-->
 	<?php get_footer(); ?>
 

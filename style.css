@@ -29,5 +29,76 @@ Version: 1.0.0
 
 .btn-outline-primary--modified {
 	/*background: linear-gradient(120deg, #4E31B7, #5AF3C6);*/
-	
+
+}
+
+/* start removing list style from sidebar and widget area */
+.sidebar-box {
+	list-style: none;
+
+}
+
+li.widget {
+	list-style: none;
+
+}
+
+li.widget a {
+	text-decoration: none;
+}
+
+li.widget a:hover {
+	background-color:#23cba7;
+	color: #fff;
+}
+
+
+.col-md-3 ul> li{
+	list-style: none;
+}
+
+.col-md-3 ul> li a{
+	text-decoration: none;
+	color: #fff;
+}
+.col-md-3 ul> li a:hover{
+	background-color:#ffcb05;
+	color: #fff;
+}
+
+.sidebar-box ul> li {
+	list-style: none;
+}
+
+.sidebar-box ul> li a:hover {
+	background-color:#f89406;
+	color: #fff;
+
+}
+
+.sidebar-box ul> li a {
+	text-decoration: none;
+	color: #000;
+
+}
+
+.social-icons a:hover {
+	background-color:#ffcb05;
+	color: #fff;
+}
+
+/* end removing list style from sidebar and widget area */
+
+.page-footer {
+	background: linear-gradient(120deg, #4E31B7, #5AF3C6);
+	color: #fff;
+
+}
+
+.page-footer container> row {
+	background: #000;
+}
+.footer-copyright {
+	background: #000;
+	color: #fff;
 }
