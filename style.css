@@ -114,6 +114,7 @@ padding: 80px 0;
 background: #ccc;
 }
 
+
 .newsletter .content {
 max-width: 650px;
 margin: 0 auto;
@@ -121,23 +122,27 @@ text-align: center;
 position: relative;
 z-index: 2; }
 .newsletter .content h2 {
-color: #243c4f;
+color: #fff;
 margin-bottom: 40px; }
 .newsletter .content .form-control {
 height: 50px;
 border-color: #ffffff;
-border-radius:0;
+border-radius:25px;
 }
 .newsletter .content.form-control:focus {
 box-shadow: none;
-border: 2px solid #243c4f;
+border: 2px solid #fff;
 }
 .newsletter .content .btn {
 min-height: 50px;
-border-radius:0;
-background: #243c4f;
+border-radius:25px;
+margin-left: 6px !important;
+background: linear-gradient(120deg, #4E31B7, #5AF3C6);
 color: #fff;
 font-weight:600;
+border: none;
 }
 
 /* end News letter section */
+
+
