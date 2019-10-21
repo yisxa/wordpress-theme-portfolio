@@ -1,0 +1,133 @@
+/*
+start Template Name: Blog Page Template 1 styling
+*/
+
+/*
+start Template Name: Blog Page Template 1 styling
+*/
+
+<?php
+/*
+Template Name: Blog Page Template 1
+*/
+?>
+
+
+<?php get_header(); ?>
+
+
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+<!--footer-->
+<!-- <footer class="xivig_area">
+  <!-- Top Footer Area Start -->
+  <div class="foo_top_header_one section_padding_100_70">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="xivig_part">
+            <h5>Latest Works</h5>
+            <div class="xivig_works">
+              <a class="xivig_works_img" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" alt=""></a>
+              <a class="xivig_works_img" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" alt=""></a>
+              <a class="xivig_works_img" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" alt=""></a>
+              <a class="xivig_works_img" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" alt=""></a>
+              <a class="xivig_works_img" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" alt=""></a>
+              <a class="xivig_works_img" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Bottom Area Start -->
+  <div class=" xivig_bottom_header_one section_padding_50 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <p>© All Rights Reserved by <a href="#">Webublogoverflow.blogspot -(with all love)<i class="fa fa-love"></i></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </footer> --> -->
+
+
+
+
+      <!-- Categories Widget -->
+      <div class="card my-3">
+        <h5 class="card-header">Categories</h5>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Simba</a>
+                </li>
+                <li>
+                  <a href="#">Nyati</a>
+                </li>
+                <li>
+                  <a href="#">Faru</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#">Kiboko</a>
+                </li>
+                <li>
+                  <a href="#">Fisi</a>
+                </li>
+                <li>
+                  <a href="#">Pundamlia</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Side Widget -->
+     <!--  <div class="card my-4">
+        <h5 class="card-header">maelezo</h5>
+        <div class="card-body">
+          You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
+        </div>
+      </div> -->
+      <!-- Side Widget -->
+      <!-- <div class="card my-4">
+        <h5 class="card-header">banner</h5>
+        <div class="card-body">
+          <img class="card-img-top" src="https://2.bp.blogspot.com/-vvG5hMTFOro/W6RaoxdAikI/AAAAAAAAK1k/jezYdP7fvfYvt15Jv8a0agrGQE2lMU8YgCKgBGAs/s1600/MASAI-2.jpg" alt="Card image cap">
+        </div>
+      </div> -->
+
+      <!-- tweeter -->
+     <!--  <div class="card my-4">
+        <h5 class="card-header">Tweeter here</h5>
+        <div class="card-body">
+
+          <a class="twitter-timeline" href="https://twitter.com/Luckmoshy?ref_src=twsrc%5Etfw">Tweets by Luckmoshy</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          <a href="https://twitter.com/Luckmoshy?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @Luckmoshy</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div> -->
+    <!-- </div> --> -->

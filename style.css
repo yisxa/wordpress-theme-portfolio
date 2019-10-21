@@ -23,7 +23,7 @@ Version: 1.0.0
 }
 
 .btn-primary--modified {
-	background: linear-gradient(120deg, #4E31B7, #5AF3C6);
+	background: linear-gradient(120deg, #29f1c3, #f62459);
     color: #fff
 }
 
@@ -90,7 +90,7 @@ li.widget a:hover {
 /* end removing list style from sidebar and widget area */
 
 .page-footer {
-	background: linear-gradient(120deg, #4E31B7, #5AF3C6);
+	background: linear-gradient(120deg, #29f1c3, #f62459);
 	color: #fff;
 
 }
@@ -102,3 +102,38 @@ li.widget a:hover {
 	background: #000;
 	color: #fff;
 }
+
+/* Start News letter section */
+
+.newsletter {
+padding: 80px 0;
+background: #ccc;
+}
+
+.newsletter .content {
+max-width: 650px;
+margin: 0 auto;
+text-align: center;
+position: relative;
+z-index: 2; }
+.newsletter .content h2 {
+color: #243c4f;
+margin-bottom: 40px; }
+.newsletter .content .form-control {
+height: 50px;
+border-color: #ffffff;
+border-radius:0;
+}
+.newsletter .content.form-control:focus {
+box-shadow: none;
+border: 2px solid #243c4f;
+}
+.newsletter .content .btn {
+min-height: 50px;
+border-radius:0;
+background: #243c4f;
+color: #fff;
+font-weight:600;
+}
+
+/* end News letter section */

@@ -5,6 +5,7 @@ function add_theme_scripts() {
 
   wp_enqueue_style( 'main', get_template_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css');
   wp_enqueue_style( 'icon', get_template_directory_uri() . '/assets/fonts/ionicons.min.css');
+  wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/bootstrap/css/custom.css');
   wp_enqueue_style( 'style', get_stylesheet_uri());
 
   wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', true);

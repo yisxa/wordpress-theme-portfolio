@@ -1,4 +1,4 @@
-<?php 
+<?php
 /*
 	Template Name: Page
 */
@@ -7,7 +7,7 @@
 <br><br><br>
 
 <section>
-			<?php // Display blog posts on any page @ https://m0n.co/l
+			<?php // Display blog posts on any page
 			$temp = $wp_query; $wp_query= null;
 			$wp_query = new WP_Query(); $wp_query->query('posts_per_page=4' . '&paged='.$paged);
 			while ($wp_query->have_posts()) : $wp_query->the_post(); ?>
@@ -30,7 +30,7 @@
 								<div class="card-body">
 									<p><?php the_excerpt(); ?></p>
 								</div>
-							</div>	
+							</div>
 						</div>
 						<div class="col-md-6">
 							<div class="card border-0"><a href="#"><img src="<?php echo get_theme_file_uri('/assets/img/nature/image1.jpg'); ?>" alt="Card Image" class="card-img-top scale-on-hover"></a>
@@ -41,19 +41,19 @@
 							</div>
 						</div>
 					</div>
-						
-				
+					 <?php endwhile; ?>
+
 				</div>
 				<div class="col-md-4">
 					<!-- for getting the sidebar.php link to the index.php-->
 					<?php get_sidebar(); ?>
 				</div>
 	        </div>
-	        <?php endwhile; ?>
+
 			<?php if ($paged > 1) { ?>
 
 					<nav id="nav-posts">
-						<div class="prev"><?php next_posts_link('&laquo; Previous Posts'); ?></div>
+
 						<div class="next"><?php previous_posts_link('Newer Posts &raquo;'); ?></div>
 					</nav>
 
@@ -65,12 +65,12 @@
 
 					<?php } ?>
 
-					<?php wp_reset_postdata(); ?>	
+					<?php wp_reset_postdata(); ?>
 
-			
+
 </section>
 
-	
+
 
 
 
