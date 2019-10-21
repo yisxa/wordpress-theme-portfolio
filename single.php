@@ -77,6 +77,10 @@
 			</div>
 		</div>
 
+		<!-- News letter section -->
+		<!-- post content from template parts content-single -->
+		<?php get_template_part('template-parts/newsletter'); ?>
+
 		<!-- for getting the footer.php link to the index.php-->
 		<?php get_footer(); ?>
 

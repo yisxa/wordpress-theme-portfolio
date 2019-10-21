@@ -23,10 +23,14 @@ Version: 1.0.0
 }
 
 .btn-primary--modified {
-	background: linear-gradient(120deg, #29f1c3, #f62459);
+	background: linear-gradient(120deg, #4E31B7, #5AF3C6);
     color: #fff
 }
 
+.btn-primary--modified-2 {
+	background-color:#f89406;
+	color: #fff;
+}
 .btn-outline-primary--modified {
 	/*background: linear-gradient(120deg, #4E31B7, #5AF3C6);*/
 

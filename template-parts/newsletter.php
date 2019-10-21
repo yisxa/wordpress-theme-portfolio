@@ -8,6 +8,7 @@
  *
  */
 
+?>
 
 <section class="newsletter">
         <div class="container">

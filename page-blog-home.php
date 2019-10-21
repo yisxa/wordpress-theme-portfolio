@@ -82,6 +82,7 @@
 </div>
 <!-- /.container -->
 
-
+<!-- post content from template parts content-single -->
+<?php get_template_part('template-parts/newsletter'); ?>
 
 <?php get_footer(); ?>

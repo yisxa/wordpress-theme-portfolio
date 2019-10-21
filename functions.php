@@ -85,7 +85,7 @@ function xivig_customtheme_setup(){
 // Changing excerpt more
     function xivig_new_excerpt_more($more) {
      global $post;
-     return '… <a href="'. get_permalink($post->ID) . '">' . '<button class="btn btn-primary btn-primary--modified  py2 px2">Read More</button>' . '</a>';
+     return '… <a href="'. get_permalink($post->ID) . '">' . '<button class="btn btn-primary btn-primary--modified-2  py2 px2">Read More</button>' . '</a>';
    }
    add_filter('excerpt_more', 'xivig_new_excerpt_more');
 
@@ -168,7 +168,6 @@ function xivig_customtheme_setup(){
 }
 
 add_action( 'widgets_init', 'xivig_customtheme_widgets');
-
 
 
 
