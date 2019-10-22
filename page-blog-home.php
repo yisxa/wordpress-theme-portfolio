@@ -40,7 +40,7 @@
       <div class="card mb-4">
         <!--  post thumbnail image -->
         <?php if(has_post_thumbnail()) : ?>
-          <img class="card-img-top" src="<?php the_post_thumbnail();?>">
+          <img class="card-img-top" src="<?php the_post_thumbnail();?>
          <?php endif; ?>
         <div class="card-body">
           <h2 class="card-title"><a href="<?php the_permalink(); ?>" title="Read more"><?php the_title(); ?></a></h2>

@@ -8,10 +8,15 @@ function add_theme_scripts() {
   wp_enqueue_style( 'custom', get_template_directory_uri() . '/assets/bootstrap/css/custom.css');
   wp_enqueue_style( 'style', get_stylesheet_uri());
 
-  wp_enqueue_script( 'custom', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', true);
 
   wp_enqueue_script( 'script', get_template_directory_uri() . '/assets/bootstrap/js/bootstrap.min.js', array ( 'jquery' ), 1.1, true);
   wp_enqueue_script( 'theme', get_template_directory_uri() . '/assets/js/theme.js', true);
+
+  // To open the reply in the same window  and dont get refreshed
+  if( is_singular() && comments_open() && get_option('thread_comments') ){
+    wp_enqueue_script('comment-reply');
+  }
+
 
   //
   //   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -101,10 +106,10 @@ function xivig_customtheme_setup(){
     'id'            => 'sidebar-1',
     'description'   => __( 'Add widgets here to appear in the sidebar', 'xivig' ),
     'class'         => '',
-    'before_widget' => '<li id="%1$s" class="widget %2$s">',
-    'after_widget'  => '</li>',
-    'before_title'  => '<h2 class="widget-title">',
-    'after_title'   => '</h2>',
+    'before_widget' => '<div id="%1$s" class="card my-4 %2$s"><div class="card-body">',
+    'after_widget'  => '</div></div>',
+    'before_title'  => '<h5 class="card-header">',
+    'after_title'   => '</h5>',
   );
   register_sidebar( $args );
 

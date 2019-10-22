@@ -2,3 +2,58 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quae cum ab maxime 
 
  background: linear-gradient(120deg, #189cd5, #f62459);
  background: linear-gradient(120deg, #29f1c3, #f62459);
+
+
+ .xivig-newsletter {
+		color: #999;
+		font-size: 15px;
+	}
+	.xivig-newsletter .xivig-content {
+		padding: 40px;
+		border-radius: 0;
+		border: none;
+	}
+	.xivig-newsletter .xivig-header {
+		border-bottom: none;
+        position: relative;
+		text-align: center;
+		border-radius: 5px 5px 0 0;
+	}
+	.xivig-newsletter h4 {
+		color: #000;
+		text-align: center;
+		font-size: 30px;
+		margin: 0 0 25px;
+		font-weight: bold;
+		text-transform: capitalize;
+	}
+	.xivig-newsletter .form-control, .xivig-newsletter .btn {
+		min-height: 46px;
+		border-radius: 3px;
+	}
+	.xivig-newsletter .form-control {
+		box-shadow: none;
+		border-color: #dbdbdb;
+	}
+	.xivig-newsletter .form-control:focus {
+		border-color: #7265ea;
+		box-shadow: 0 0 8px rgba(114, 101, 234, 0.5);
+	}
+    .xivig-newsletter .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #7265ea;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+		padding: 6px 20px;
+		min-width: 80px;
+        border: none;
+    }
+	.xivig-newsletter .btn:hover, .xivig-newsletter .btn:focus {
+		background: #4e3de4;
+		outline: none;
+	}
+	.xivig-newsletter .input-group {
+		margin: 30px 0 15px;
+	}
