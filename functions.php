@@ -205,3 +205,45 @@ function xivig_custom_shortcode2($atts, $content=null){
 
 add_shortcode('four_column', 'xivig_custom_shortcode2');
 
+
+// social sharing button link function
+function xivig_social_sharing_buttons($content) {
+  global $post;
+  if(is_singular() || is_home()){
+
+    // Get current page URL
+    $xivigURL = urlencode(get_permalink());
+
+    // Get current page title
+    $xivigTitle = htmlspecialchars(urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8')), ENT_COMPAT, 'UTF-8');
+    // $xivigTitle = str_replace( ' ', '%20', get_the_title());
+
+    // Get Post Thumbnail for pinterest
+    $xivigThumbnail = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full' );
+
+    // Construct sharing URL without using any script
+    $twitterURL = 'https://twitter.com/intent/tweet?text='.$xivigTitle.'&amp;url='.$xivigURL.'&amp;via=xivig';
+    $facebookURL = 'https://www.facebook.com/sharer/sharer.php?u='.$xivigURL;
+    $googleURL = 'https://plus.google.com/share?url='.$xivigURL;
+    $linkedInURL = 'https://www.linkedin.com/shareArticle?mini=true&url='.$xivigURL.'&amp;title='.$xivigTitle;
+
+    // Pinterest sharing URL without using any script
+    $pinterestURL = 'https://pinterest.com/pin/create/button/?url='.$xivigURL.'&amp;media='.$xivigThumbnail[0].'&amp;description='.$xivigTitle;
+
+    // Add sharing button at the end of page/page content
+    $content .= '<!-- Implementing  social sharing buttons without any JavaScript loading. No plugin required. -->';
+    $content .= '<div class="xivig-social">';
+    $content .= '<h5>SHARE ON</h5> <a class="xivig-link xivig-twitter" href="'. $twitterURL .'" target="_blank">Twitter</a>';
+    $content .= '<a class="xivig-link xivig-facebook" href="'.$facebookURL.'" target="_blank">Facebook</a>';
+    $content .= '<a class="xivig-link xivig-googleplus" href="'.$googleURL.'" target="_blank">Google+</a>';
+    $content .= '<a class="xivig-link xivig-linkedin" href="'.$linkedInURL.'" target="_blank">LinkedIn</a>';
+    $content .= '<a class="xivig-link xivig-pinterest" href="'.$pinterestURL.'" data-pin-custom="true" target="_blank">Pin It</a>';
+    $content .= '</div>';
+
+    return $content;
+  }else{
+    // if not a post/page then don't include sharing button
+    return $content;
+  }
+};
+add_filter( 'the_content', 'xivig_social_sharing_buttons');

@@ -6,7 +6,7 @@
             <div class="container">
                 <div class="avatar" style="background-image:url(&quot;<?php echo get_theme_file_uri('/assets/img/about.jpg');  ?>&quot;);"></div>
                 <div class="about-me">
-                    <p>Hello! I am <strong>John Smith</strong>. I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.</p><a class="btn btn-outline-primary btn-outline-primary--modified" role="button" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/wp_all/wp_myproject/page-hire-me">Hire me</a></div>
+                    <p>Hello! I am <strong>John Smith</strong>. I work as interface and front end developer. I have passion for pixel perfect, minimal and easy to use interfaces.</p><a class="btn btn-outline-primary btn-outline-primary--modified" role="button" href="<?php $_SERVER['DOCUMENT_ROOT'] ?>/wp_myproject/page-hire-me">Hire me</a></div>
             </div>
         </section>
         <section class="portfolio-block photography">
@@ -26,7 +26,7 @@
         <section class="portfolio-block call-to-action border-bottom">
             <div class="container">
                 <div class="d-flex justify-content-center align-items-center content">
-                    <h3>Like what you see?</h3><button class="btn btn-outline-primary btn-outline-primary--modified btn-lg" type="button" onclick="window.location.href='<?php $_SERVER["DOCUMENT_ROOT"]?>/wp_all/wp_myproject/page-hire-me'">Hire me</button></div>
+                    <h3>Like what you see?</h3><button class="btn btn-outline-primary btn-outline-primary--modified btn-lg" type="button" onclick="window.location.href='<?php $_SERVER["DOCUMENT_ROOT"]?>/wp_myproject/page-hire-me'">Hire me</button></div>
             </div>
         </section>
         <section class="portfolio-block skills">

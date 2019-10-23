@@ -146,3 +146,78 @@ border: none;
 /* end News letter section */
 
 
+/* Social share link button */
+.xivig-link {
+    padding: 2px 8px 4px 8px !important;
+    color: white;
+    font-size: 12px;
+    border-radius: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    -moz-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+    margin-top: 2px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.xivig-link:hover,.xivig-link:active {
+    color: white;
+}
+
+.xivig-twitter {
+    background: #00aced;
+}
+
+.xivig-twitter:hover,.xivig-twitter:active {
+    background: #0084b4;
+}
+
+.xivig-facebook {
+    background: #3B5997;
+}
+
+.xivig-facebook:hover,.xivig-facebook:active {
+    background: #2d4372;
+}
+
+.xivig-googleplus {
+    background: #D64937;
+}
+
+.xivig-googleplus:hover,.xivig-googleplus:active {
+    background: #b53525;
+}
+
+.xivig-buffer {
+    background: #444;
+}
+
+.xivig-buffer:hover,.xivig-buffer:active {
+    background: #222;
+}
+
+.xivig-pinterest {
+    background: #bd081c;
+}
+
+.xivig-pinterest:hover,.xivig-pinterest:active {
+    background: #bd081c;
+}
+
+.xivig-linkedin {
+    background: #0074A1;
+}
+
+.xivig-linkedin:hover,.xivig-linkedin:active {
+    background: #006288;
+}
+
+.xivig-social {
+    margin: 20px 0px 25px 0px;
+    -webkit-font-smoothing: antialiased;
+    font-size: 12px;
+}

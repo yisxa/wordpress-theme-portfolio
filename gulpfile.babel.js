@@ -9,7 +9,7 @@ const server = browserSync.create();
 export const serve = (done) => {
 	server.init({
 		notify : false, // disable the browser sync connected notification
-		proxy: "http://localhost/wp_all/wp_myproject/", // either by proxy url or
+		proxy: "http://localhost/wp_myproject/", // either by proxy url or
 		// server: { // from base directory url
   //           baseDir: "./src",
   //           browser: "google chrome"
